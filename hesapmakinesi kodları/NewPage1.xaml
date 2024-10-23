@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HesapMakinesi.NewPage1"
+             Title="Hesap Makinesi">
+
+    <VerticalStackLayout Spacing="15" VerticalOptions="Center">
+
+        <Label 
+            Text="Hesap Makinesine Hoşgeldiniz"
+            HorizontalOptions="Center"
+            FontSize="24"
+            TextColor="Red"/>
+
+        <Entry 
+            x:Name="usernameEntry"
+            Placeholder="Kullanıcı Adı" 
+            WidthRequest="200" 
+            HorizontalOptions="Center"
+            TextColor="White"
+            MaxLength="20"
+            Keyboard="Text" />
+
+        <Entry 
+            x:Name="passwordEntry"
+            Placeholder="Şifre" 
+            WidthRequest="200" 
+            HorizontalOptions="Center"
+            IsPassword="True"
+            TextColor="White"
+            Keyboard="Default" />
+
+        <Button 
+            Text="GİRİŞ" 
+            WidthRequest="150" 
+            BackgroundColor="Blue"
+            TextColor="White"
+            HorizontalOptions="Center"
+            Clicked="OnLoginClicked" />
+
+        <Button 
+            Background="Transparent"
+            Clicked="Kaydolma_Clicked"
+            Text="Hesabınız yoksa kaydolmak için buraya tıklayın."
+            TextColor="Blue"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
